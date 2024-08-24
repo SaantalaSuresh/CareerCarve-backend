@@ -1,20 +1,23 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "CareerCarve Backend",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev":"nodemon server.js"
+    "dev": "nodemon server.js",
+    "postinstall": "npm rebuild sqlite3"
   },
   "keywords": [],
-  "author": "",
+  "author": "Saantala Suresh",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "nodemon": "^3.1.4",
     "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": "20.x"
   }
 }
